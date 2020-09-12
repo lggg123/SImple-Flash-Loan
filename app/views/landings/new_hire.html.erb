@@ -1,0 +1,134 @@
+<nav class="navbar navbar-dark bg-dark">
+<%= image_tag "apple.png" %>
+</nav>
+
+<br>
+<br>
+
+<div class="container-fluid">
+  <div class="row">
+        <div class="col-3" id="sticky-sidebar">
+            <div class="nav flex-column flex-nowrap vh-100 overflow-auto text-white p-2">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <a href="./" class="nav-link">Hardware Checklist</a>
+                <a href="./" class="nav-link" id="nav-link-2">Software Checklist</a>
+            </div>
+        </div>
+        <div class="col-9 text-body">
+            <form action="/make_new_request" method="post" class="text-center">
+                <label for="employee_start_date">Employee start date: </label>
+                    <input type="date" name="employee_start_date" value=""><br><br><br>
+            </form>
+            <br><br>
+            <h2 class="text-center">Hardware Checklist</h2><br>
+
+            <h5>Laptop</h5><br>
+            <form action="/make_new_request" method="post">
+                <input type="checkbox" name='13_inch' value='13" inch'>
+                    <label for="13">13"</label><br>
+                <input type="checkbox" name="15/16_inch" value='15/16"'>
+                    <label for="15/16">15/16"</label><br><br>
+            <h5>Desktop</h5>
+                <input type="checkbox" name="21_inch" value='21"'>
+                    <label for="21">21"</label><br>
+                <input type="checkbox" name="27_inch" value="hardware">
+                    <label for="27">27"</label><br><br>
+            <h5>iPad</h5>
+                <input type="checkbox" name="9.7_inch" value='9.7"'>
+                    <label for="9.7">9.7"</label><br>
+                <input type="checkbox" name="12.9_inch" value='12.9"'>
+                    <label for="12.9">12.9"</label><br><br>
+            <h5>iPhone</h5>
+                <input type="checkbox" name="8" value="8">
+                    <label for="8">8</label><br>
+                <input type="checkbox" name="8_plus" value="8 Plus">
+                    <label for="8_plus">8 Plus</label><br>
+                <input type="checkbox" name="XR" value="XR">
+                    <label for="XR">XR</label><br>
+                <input type="checkbox" name="XS" value="XS">
+                    <label for="XS">XS</label><br>
+            </form>
+            <br>
+            <br>
+
+            <h2 class="text-center">Software Checklist</h2><br>
+            <form action="/make_new_hire" method="post">
+            <h5>Access to:</h5><br>
+                <input type="checkbox" name="lenel" value="lenel">
+                    <label for="lenel">lenel</label><br>
+                <input type="checkbox" name="Milestone" value="Milestone">
+                    <label for="Milestone">Milestone</label><br>
+                <input type="checkbox" name="central_station_ticketing" value="Central Station Ticketing">
+                    <label for="central_station_ticketing">Central Station Ticketing</label><br>
+                <input type="checkbox" name="calendar" value="Calendar">
+                    <label for="calendar">Calendar</label><br>
+                <input type="checkbox" name="tdo-exclusive-user-group" value="TDO-Exclusive-User group (Mobile Phone VPN)">
+                    <label for="tdo-exclusive-user-group">TDO-Exclusive-User group (Mobile Phone VPN)</label><br>
+                <input type="checkbox" name="shipping_portal_access" value="Shippin Portal access">
+                    <label for="shipping_portal_access">Shipping Portal Access</label><br>
+                <input type="checkbox" name="eApproval" value="eApproval">
+                    <label for="eApproval">eApproval</label><br>
+                <input type="checkbox" name="filemaker" value="Filemaker">
+                    <label for="filemaker">Filemaker</label><br>
+                <input type="checkbox" name="traka" value="Traka">
+                    <label for="traka">traka</label><br>
+                <input type="checkbox" name="collections" value="collections" onchange="javascript:toggleOtherTextboxVisible()" id="OtherCheckBox">
+                    <label for="collectios">Collection Access</label><br><br>
+            <h5>Access Manager - Requests for Access</h5><br>
+                <input type="checkbox" name="microsoft_office" value="Microsoft Office">
+                    <label for="microsoft_office">Microsoft Office</label><br>
+                <input type="checkbox" name="mail" value="Mail">
+                    <label for="mail">Mail</label><br>
+                <input type="checkbox" name="calendar" value="Calendar">
+                    <label for="calendar">Calendar</label><br>
+                <input type="checkbox" name="slack" value="Slack">
+                    <label for="slack">Slack</label><br>
+                <input type="checkbox" name="box" value="Box">
+                    <label for="box">Box</label><br>
+                <input type="checkbox" name="radar" value="Radar">
+                    <label for="radar">Radar</label><br>
+                <input type="checkbox" name="remote_access" value="Remote Access">
+                    <label for="remote_access">Remote Access</label><br>
+                <input type="checkbox" name="switchboard" value="Switchboard">
+                    <label for="switchboard">Switchboard</label><br>
+                <input type="checkbox" name="webex" value="Webex">
+                    <label for="webex">Webex</label><br>
+                <input type="checkbox" name="cisco_jabber" value="Cisco Jabber">
+                    <label for="cisco_jabber">Cisco Jabber</label><br><br>
+                <h5>Applications (physical)</h5><br>
+                <input type="checkbox" name="agesadmin" value="AGESAdmin">
+                    <label for="agesadmin">AGESAdmin</label><br>
+                <input type="checkbox" name="boxsync" value="Box Sync">
+                    <label for="boxsync">Box Sync</label><br>
+                <input type="checkbox" name="cisco_jabber" value="Cisco Jabber">
+                    <label for="cisco_jabber">Cisco Jabber</label><br>
+                <input type="checkbox" name="eapproval" value="eapproval">
+                    <label for="eapproval">eapproval</label><br>
+                <input type="checkbox" name="filemaker_pro_advanced" value="Filemaker Pro Advanced">
+                    <label for="filemaker_pro_advanced">Filemaker Pro Advanced</label><br>
+                <input type="checkbox" name="microsoft_office" value="Microsoft Office">
+                    <label for="microsoft_office">Microsoft Office</label><br>
+                <input type="checkbox" name="microsoft_remote_desktop+desktop_connections" value="Microsoft Remote Desktop + Desktop connections">
+                    <label for="microsoft_remote_desktop+desktop_connections">Microsoft Remote Desktop + Desktop connections</label><br>
+                <input type="checkbox" name="quip" value="Quip">
+                    <label for="quip">Quip</label><br>
+                <input type="checkbox" name="radar" value="Radar">
+                    <label for="radar">Radar</label><br>
+                <input type="checkbox" name="remote_desktop" value="Remote Desktop">
+                    <label for="remote_desktop">Remote Desktop</label><br>
+                <input type="checkbox" name="vmware_fusion" value="VMware Fusion">
+                    <label for="vmware_fusion">VMware Fusion</label><br>
+                <input type="checkbox" name="vnc_viewer" value="VNC Viewer">
+                    <label for="vnc_viewer">VNC Viewer</label><br>
+                <input type="checkbox" name="valorcad" value="ValorCAD">
+                    <label for="valorcad">ValorCAD</label><br>
+            </form>
+            <br>
+            <input type="submit" value="Submit" class="btn btn-secondary mx-auto d-block">
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+
