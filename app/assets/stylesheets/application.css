@@ -108,9 +108,9 @@
 
  #nav-links {
      position: sticky;
-     Top: 0;
+     Top: 300px;
  }
 
- #check-box {
-     margin-left: 50px;
+.checklists {
+    margin-left: 20px;
 }

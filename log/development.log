@@ -4319,3 +4319,102 @@ Processing by LandingsController#new_hire as HTML
 Completed 200 OK in 78ms (Views: 74.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/new_hire" for ::1 at 2020-09-14 06:58:34 -0700
+  [1m[35m (16.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+DEPRECATION WARNING: autoprefixer-rails was deprected. Migration guide:
+https://github.com/ai/autoprefixer-rails/wiki/Deprecated (called from _app_views_landings_new_hire_html_erb__2724789521395296312_70132342041820 at /Users/georgelugo2234/Desktop/atreya_work/secret_project-frontend/app/views/landings/new_hire.html.erb:2)
+  Rendered landings/new_hire.html.erb within layouts/application (5197.1ms)
+Completed 200 OK in 5370ms (Views: 5358.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-14 06:58:43 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 105ms (Views: 95.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-14 06:58:52 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 532ms (Views: 528.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-14 06:59:12 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 86ms (Views: 82.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-14 07:00:06 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 527ms (Views: 524.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-14 07:00:11 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 534ms (Views: 530.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-14 07:00:16 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 173ms (Views: 167.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-14 07:00:18 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 109ms (Views: 105.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-14 07:00:19 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 110ms (Views: 104.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-14 07:00:21 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 123ms (Views: 118.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-14 07:01:33 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+DEPRECATION WARNING: autoprefixer-rails was deprected. Migration guide:
+https://github.com/ai/autoprefixer-rails/wiki/Deprecated (called from _app_views_landings_new_hire_html_erb___3033113670973177923_70359782732660 at /Users/georgelugo2234/Desktop/atreya_work/secret_project-frontend/app/views/landings/new_hire.html.erb:2)
+  Rendered landings/new_hire.html.erb within layouts/application (4244.7ms)
+Completed 200 OK in 4406ms (Views: 4397.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-14 07:01:53 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 1382ms (Views: 1376.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-14 07:04:04 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 681ms (Views: 676.2ms | ActiveRecord: 0.0ms)
+
+

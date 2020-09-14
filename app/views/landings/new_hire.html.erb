@@ -9,7 +9,6 @@
   <div class="row">
         <div class="col-3">
             <div class="nav flex-column flex-nowrap vh-100 overflow-auto text-white p-2" id="nav-links">
-                <br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <a href="./" class="nav-link">Hardware Checklist</a>
                 <a href="#software_checklist" class="nav-link" id="nav-link-2">Software Checklist</a>
             </div>
@@ -24,21 +23,28 @@
 
             <h5>Laptop</h5><br>
             <form action="/make_new_request" method="post">
+            <div class="checklists">
                 <input type="checkbox" name='13_inch' value='13" inch'>
                     <label for="13">13"</label><br>
                 <input type="checkbox" name="15/16_inch" value='15/16'>
                     <label for="15/16">15/16"</label><br><br>
+            </div>
             <h5>Desktop</h5>
+            <div class="checklists">
                 <input type="checkbox" name="21_inch" value='21"'>
                     <label for="21">21"</label><br>
                 <input type="checkbox" name="27_inch" value="hardware">
                     <label for="27">27"</label><br><br>
+            </div>
             <h5>iPad</h5>
+            <div class="checklists">
                 <input type="checkbox" name="9.7_inch" value='9.7"'>
                     <label for="9.7">9.7"</label><br>
                 <input type="checkbox" name="12.9_inch" value='12.9"'>
                     <label for="12.9">12.9"</label><br><br>
+            </div>
             <h5>iPhone</h5>
+            <div class="checklists">
                 <input type="checkbox" name="8" value="8">
                     <label for="8">8</label><br>
                 <input type="checkbox" name="8_plus" value="8 Plus">
@@ -47,6 +53,7 @@
                     <label for="XR">XR</label><br>
                 <input type="checkbox" name="XS" value="XS">
                     <label for="XS">XS</label><br>
+            </div>
             </form>
             <br>
             <br>
@@ -54,6 +61,7 @@
             <h2 class="text-center" id="software_checklist">Software Checklist</h2><br><br>
             <form action="/make_new_hire" method="post">
             <h5>Access to:</h5><br>
+            <div class="checklists">
                 <input type="checkbox" name="lenel" value="lenel">
                     <label for="lenel">lenel</label><br>
                 <input type="checkbox" name="Milestone" value="Milestone">
@@ -75,7 +83,9 @@
                 <input type="checkbox" name="collections" value="collections"  onclick="dynInput(this);">
                     <label for="collectios">Collection Access</label><br><br>
                 <p id="insertinputs"></p>
+            </div>
             <h5>Access Manager - Requests for Access</h5><br>
+            <div class="checklists">
                 <input type="checkbox" name="microsoft_office" value="Microsoft Office">
                     <label for="microsoft_office">Microsoft Office</label><br>
                 <input type="checkbox" name="mail" value="Mail">
@@ -96,7 +106,9 @@
                     <label for="webex">Webex</label><br>
                 <input type="checkbox" name="cisco_jabber" value="Cisco Jabber">
                     <label for="cisco_jabber">Cisco Jabber</label><br><br>
-                <h5>Applications (physical)</h5><br>
+            </div>
+            <h5>Applications (physical)</h5><br>
+            <div class="checklists">
                 <input type="checkbox" name="agesadmin" value="AGESAdmin">
                     <label for="agesadmin">AGESAdmin</label><br>
                 <input type="checkbox" name="boxsync" value="Box Sync">
@@ -123,6 +135,7 @@
                     <label for="vnc_viewer">VNC Viewer</label><br>
                 <input type="checkbox" name="valorcad" value="ValorCAD">
                     <label for="valorcad">ValorCAD</label><br>
+            </div>
             </form>
             <br>
             <input type="submit" value="Submit" class="btn btn-secondary mx-auto d-block">
