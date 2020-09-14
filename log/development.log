@@ -3496,3 +3496,826 @@ Processing by LandingsController#new_hire as HTML
 Completed 200 OK in 604ms (Views: 595.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2020-09-12 12:50:21 -0700
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (310.8ms)
+Completed 200 OK in 515ms (Views: 505.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-12 12:50:24 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 104ms (Views: 100.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-09-12 12:53:35 -0700
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 114ms (Views: 109.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ad_request" for ::1 at 2020-09-12 12:53:38 -0700
+Processing by LandingsController#ad_request as HTML
+  Rendering landings/ad_request.html.erb within layouts/application
+  Rendered landings/ad_request.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 108ms (Views: 102.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-09-12 13:05:11 -0700
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 265ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::Template::Error - The asset "defaults.js" is not present in the asset pipeline.:
+  app/views/layouts/application.html.erb:10:in `view template'
+
+Started POST "/__better_errors/cc7692ff813206e5/variables" for ::1 at 2020-09-12 13:05:11 -0700
+Started GET "/" for ::1 at 2020-09-12 13:06:53 -0700
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...script_include_tag , 'jquery' );@output_buffer.safe_append='
+...                              ^
+/Users/georgelugo2234/Desktop/atreya_work/secret_project-frontend/app/views/layouts/application.html.erb:19: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/Users/georgelugo2234/Desktop/atreya_work/secret_project-frontend/app/views/layouts/application.html.erb:21: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~:
+  app/views/layouts/application.html.erb:10:in `'
+
+Started POST "/__better_errors/05fa671db210602e/variables" for ::1 at 2020-09-12 13:06:53 -0700
+Started GET "/" for ::1 at 2020-09-12 13:07:05 -0700
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+...script_include_tag , "jquery" );@output_buffer.safe_append='
+...                              ^
+/Users/georgelugo2234/Desktop/atreya_work/secret_project-frontend/app/views/layouts/application.html.erb:19: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/Users/georgelugo2234/Desktop/atreya_work/secret_project-frontend/app/views/layouts/application.html.erb:21: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~:
+  app/views/layouts/application.html.erb:10:in `'
+
+Started POST "/__better_errors/3e9b134ca34041be/variables" for ::1 at 2020-09-12 13:07:06 -0700
+Started GET "/" for ::1 at 2020-09-12 13:09:02 -0700
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 195ms (Views: 192.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-12 13:09:10 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 100ms (Views: 95.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-12 13:10:04 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 226ms (Views: 222.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-09-12 13:34:19 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (419.0ms)
+Completed 200 OK in 561ms (Views: 549.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ad_request" for ::1 at 2020-09-12 13:34:21 -0700
+Processing by LandingsController#ad_request as HTML
+  Rendering landings/ad_request.html.erb within layouts/application
+  Rendered landings/ad_request.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 103ms (Views: 98.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-12 13:34:24 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 101ms (Views: 96.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-12 13:34:59 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 106ms (Views: 102.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-12 14:14:46 -0700
+  [1m[35m (15.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2154.1ms)
+Completed 200 OK in 2322ms (Views: 2313.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-12 14:15:49 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (281.1ms)
+Completed 500 Internal Server Error in 305ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::Template::Error - couldn't find file 'custom' with type 'application/javascript'
+Checked in these paths: 
+  /Users/georgelugo2234/Desktop/atreya_work/secret_project-frontend/app/assets/config
+  /Users/georgelugo2234/Desktop/atreya_work/secret_project-frontend/app/assets/images
+  /Users/georgelugo2234/Desktop/atreya_work/secret_project-frontend/app/assets/javascripts
+  /Users/georgelugo2234/Desktop/atreya_work/secret_project-frontend/app/assets/stylesheets
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/jquery-rails-4.4.0/vendor/assets/javascripts
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.3/lib/assets/compiled
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.3/app/assets/javascripts
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.3/lib/assets/compiled
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/georgelugo2234/Desktop/atreya_work/secret_project-frontend/node_modules
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/popper_js-1.16.0/assets/javascripts
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-5.0.0.alpha1/assets/stylesheets
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-5.0.0.alpha1/assets/javascripts:
+  app/views/landings/new_hire.html.erb:2:in `view template'
+
+Started POST "/__better_errors/2fc40fd9f08bafdd/variables" for ::1 at 2020-09-12 14:15:49 -0700
+Started GET "/new_hire" for ::1 at 2020-09-12 14:16:37 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (1964.6ms)
+Completed 200 OK in 2141ms (Views: 2138.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-12 14:20:32 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+DEPRECATION WARNING: autoprefixer-rails was deprected. Migration guide:
+https://github.com/ai/autoprefixer-rails/wiki/Deprecated (called from _app_views_landings_new_hire_html_erb__4431685293289868653_70158133742140 at /Users/georgelugo2234/Desktop/atreya_work/secret_project-frontend/app/views/landings/new_hire.html.erb:2)
+  Rendered landings/new_hire.html.erb within layouts/application (3340.5ms)
+Completed 200 OK in 3477ms (Views: 3468.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-12 14:29:06 -0700
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+DEPRECATION WARNING: autoprefixer-rails was deprected. Migration guide:
+https://github.com/ai/autoprefixer-rails/wiki/Deprecated (called from _app_views_landings_new_hire_html_erb__4138396671071350213_70253092460900 at /Users/georgelugo2234/Desktop/atreya_work/secret_project-frontend/app/views/landings/new_hire.html.erb:2)
+  Rendered landings/new_hire.html.erb within layouts/application (3331.1ms)
+Completed 200 OK in 3472ms (Views: 3462.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-12 14:36:29 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2084.1ms)
+Completed 200 OK in 2200ms (Views: 2191.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-09-12 14:36:35 -0700
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 81ms (Views: 77.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ad_request" for ::1 at 2020-09-12 14:36:44 -0700
+Processing by LandingsController#ad_request as HTML
+  Rendering landings/ad_request.html.erb within layouts/application
+  Rendered landings/ad_request.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 81ms (Views: 76.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-12 14:36:49 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 93ms (Views: 88.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-09-12 14:36:51 -0700
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 90ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-12 14:36:52 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 82ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-12 14:42:51 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2342.0ms)
+Completed 200 OK in 2512ms (Views: 2501.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-09-12 14:43:36 -0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (2040.9ms)
+Completed 200 OK in 2154ms (Views: 2145.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ad_request" for ::1 at 2020-09-12 14:43:42 -0700
+Processing by LandingsController#ad_request as HTML
+  Rendering landings/ad_request.html.erb within layouts/application
+  Rendered landings/ad_request.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 80ms (Views: 76.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ad_request" for ::1 at 2020-09-12 14:44:35 -0700
+Processing by LandingsController#ad_request as HTML
+  Rendering landings/ad_request.html.erb within layouts/application
+  Rendered landings/ad_request.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 86ms (Views: 82.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-12 14:44:40 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 93ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 09:13:51 -0700
+  [1m[35m (8.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2746.4ms)
+Completed 200 OK in 2885ms (Views: 2873.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 09:14:44 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (248.8ms)
+Completed 500 Internal Server Error in 269ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::Template::Error - couldn't find file 'bundle' with type 'application/javascript'
+Checked in these paths: 
+  /Users/georgelugo2234/Desktop/atreya_work/secret_project-frontend/app/assets/config
+  /Users/georgelugo2234/Desktop/atreya_work/secret_project-frontend/app/assets/images
+  /Users/georgelugo2234/Desktop/atreya_work/secret_project-frontend/app/assets/javascripts
+  /Users/georgelugo2234/Desktop/atreya_work/secret_project-frontend/app/assets/stylesheets
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/jquery-rails-4.4.0/vendor/assets/javascripts
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.3/lib/assets/compiled
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.3/app/assets/javascripts
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.3/lib/assets/compiled
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/georgelugo2234/Desktop/atreya_work/secret_project-frontend/node_modules
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/popper_js-1.16.0/assets/javascripts
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-5.0.0.alpha1/assets/stylesheets
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-5.0.0.alpha1/assets/javascripts:
+  app/views/landings/new_hire.html.erb:2:in `view template'
+
+Started POST "/__better_errors/1e9efd4ba7c8c142/variables" for ::1 at 2020-09-13 09:14:44 -0700
+Started GET "/new_hire" for ::1 at 2020-09-13 09:15:39 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2072.3ms)
+Completed 200 OK in 2253ms (Views: 2250.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 09:18:02 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 84ms (Views: 80.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 09:18:57 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2144.6ms)
+Completed 200 OK in 2277ms (Views: 2268.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 09:25:59 -0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (235.8ms)
+Completed 500 Internal Server Error in 258ms (ActiveRecord: 0.0ms)
+
+
+
+ActionView::Template::Error - couldn't find file 'jquery3_ujs' with type 'application/javascript'
+Checked in these paths: 
+  /Users/georgelugo2234/Desktop/atreya_work/secret_project-frontend/app/assets/config
+  /Users/georgelugo2234/Desktop/atreya_work/secret_project-frontend/app/assets/images
+  /Users/georgelugo2234/Desktop/atreya_work/secret_project-frontend/app/assets/javascripts
+  /Users/georgelugo2234/Desktop/atreya_work/secret_project-frontend/app/assets/stylesheets
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/jquery-rails-4.4.0/vendor/assets/javascripts
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.3/lib/assets/compiled
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.3/app/assets/javascripts
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.3/lib/assets/compiled
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/georgelugo2234/Desktop/atreya_work/secret_project-frontend/node_modules
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/popper_js-1.16.0/assets/javascripts
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-5.0.0.alpha1/assets/stylesheets
+  /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-5.0.0.alpha1/assets/javascripts:
+  app/views/landings/new_hire.html.erb:2:in `view template'
+
+Started POST "/__better_errors/801f5be5cc4becff/variables" for ::1 at 2020-09-13 09:25:59 -0700
+Started GET "/new_hire" for ::1 at 2020-09-13 09:26:13 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2015.3ms)
+Completed 200 OK in 2199ms (Views: 2194.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 09:28:21 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2253.2ms)
+Completed 200 OK in 2416ms (Views: 2407.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 09:29:09 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2122.2ms)
+Completed 200 OK in 2252ms (Views: 2240.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 09:31:28 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2201.9ms)
+Completed 200 OK in 2382ms (Views: 2371.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 09:32:42 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2247.4ms)
+Completed 200 OK in 2428ms (Views: 2419.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 09:33:12 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 189ms (Views: 185.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 09:33:34 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 189ms (Views: 185.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 09:33:56 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 204ms (Views: 201.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 09:34:21 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 190ms (Views: 186.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-09-13 13:24:43 -0700
+  [1m[35m (12.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (3037.4ms)
+Completed 200 OK in 3139ms (Views: 3130.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:25:00 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 152ms (Views: 146.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-09-13 13:25:35 -0700
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 100ms (Views: 95.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:30:18 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 81ms (Views: 77.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:30:20 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 83ms (Views: 79.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:30:22 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 79ms (Views: 75.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:31:47 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (23.8ms)
+DEPRECATION WARNING: autoprefixer-rails was deprected. Migration guide:
+https://github.com/ai/autoprefixer-rails/wiki/Deprecated (called from _app_views_layouts_application_html_erb___4256246727422420965_70207576206740 at /Users/georgelugo2234/Desktop/atreya_work/secret_project-frontend/app/views/layouts/application.html.erb:8)
+Completed 200 OK in 1324ms (Views: 1320.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:31:50 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 93ms (Views: 89.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:32:45 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 103ms (Views: 99.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:34:31 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 100ms (Views: 96.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-09-13 13:36:53 -0700
+Processing by LandingsController#index as HTML
+  Rendering landings/index.html.erb within layouts/application
+  Rendered landings/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 103ms (Views: 98.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ad_request" for ::1 at 2020-09-13 13:37:00 -0700
+Processing by LandingsController#ad_request as HTML
+  Rendering landings/ad_request.html.erb within layouts/application
+  Rendered landings/ad_request.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 104ms (Views: 99.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ad_request" for ::1 at 2020-09-13 13:38:41 -0700
+Processing by LandingsController#ad_request as HTML
+  Rendering landings/ad_request.html.erb within layouts/application
+  Rendered landings/ad_request.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 80ms (Views: 75.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:38:46 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 84ms (Views: 80.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:39:36 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 78ms (Views: 74.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:39:43 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 85ms (Views: 80.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:44:24 -0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/georgelugo2234/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+DEPRECATION WARNING: autoprefixer-rails was deprected. Migration guide:
+https://github.com/ai/autoprefixer-rails/wiki/Deprecated (called from _app_views_landings_new_hire_html_erb__481787210339472525_70181686230960 at /Users/georgelugo2234/Desktop/atreya_work/secret_project-frontend/app/views/landings/new_hire.html.erb:2)
+  Rendered landings/new_hire.html.erb within layouts/application (4607.1ms)
+Completed 200 OK in 4753ms (Views: 4744.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:44:34 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 82ms (Views: 78.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:45:33 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 554ms (Views: 550.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:45:35 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 83ms (Views: 78.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:45:55 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 512ms (Views: 508.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:45:57 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 154ms (Views: 148.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:46:14 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 608ms (Views: 603.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:46:16 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 101ms (Views: 97.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:50:14 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 553ms (Views: 549.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:51:38 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 608ms (Views: 601.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:51:40 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 110ms (Views: 105.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:51:42 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 170ms (Views: 162.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:51:44 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (31.1ms)
+Completed 200 OK in 130ms (Views: 124.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:51:46 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 93ms (Views: 89.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:51:49 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 113ms (Views: 107.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:53:06 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 543ms (Views: 539.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:53:13 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 217ms (Views: 211.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:53:16 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 143ms (Views: 134.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:53:34 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 688ms (Views: 685.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:53:37 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 93ms (Views: 89.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:53:39 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 90ms (Views: 85.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:53:40 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 90ms (Views: 86.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:54:21 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 565ms (Views: 561.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:54:23 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 87ms (Views: 82.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:54:59 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 535ms (Views: 531.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:55:01 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 89ms (Views: 85.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:56:26 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 567ms (Views: 562.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:56:43 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 589ms (Views: 583.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:57:06 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 86ms (Views: 82.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:57:08 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 94ms (Views: 89.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:57:09 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 107ms (Views: 101.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:57:09 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 97ms (Views: 92.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:57:10 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 88ms (Views: 83.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:57:10 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 87ms (Views: 83.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:57:11 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 79ms (Views: 75.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:57:12 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 175ms (Views: 171.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new_hire" for ::1 at 2020-09-13 13:57:21 -0700
+Processing by LandingsController#new_hire as HTML
+  Rendering landings/new_hire.html.erb within layouts/application
+  Rendered landings/new_hire.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 78ms (Views: 74.7ms | ActiveRecord: 0.0ms)
+
+

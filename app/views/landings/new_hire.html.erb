@@ -7,11 +7,11 @@
 
 <div class="container-fluid">
   <div class="row">
-        <div class="col-3" id="sticky-sidebar">
-            <div class="nav flex-column flex-nowrap vh-100 overflow-auto text-white p-2">
+        <div class="col-3">
+            <div class="nav flex-column flex-nowrap vh-100 overflow-auto text-white p-2" id="nav-links">
                 <br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <a href="./" class="nav-link">Hardware Checklist</a>
-                <a href="./" class="nav-link" id="nav-link-2">Software Checklist</a>
+                <a href="#software_checklist" class="nav-link" id="nav-link-2">Software Checklist</a>
             </div>
         </div>
         <div class="col-9 text-body">
@@ -20,13 +20,13 @@
                     <input type="date" name="employee_start_date" value=""><br><br><br>
             </form>
             <br><br>
-            <h2 class="text-center">Hardware Checklist</h2><br>
+            <h2 class="text-center">Hardware Checklist</h2><br><br>
 
             <h5>Laptop</h5><br>
             <form action="/make_new_request" method="post">
                 <input type="checkbox" name='13_inch' value='13" inch'>
                     <label for="13">13"</label><br>
-                <input type="checkbox" name="15/16_inch" value='15/16"'>
+                <input type="checkbox" name="15/16_inch" value='15/16'>
                     <label for="15/16">15/16"</label><br><br>
             <h5>Desktop</h5>
                 <input type="checkbox" name="21_inch" value='21"'>
@@ -51,7 +51,7 @@
             <br>
             <br>
 
-            <h2 class="text-center">Software Checklist</h2><br>
+            <h2 class="text-center" id="software_checklist">Software Checklist</h2><br><br>
             <form action="/make_new_hire" method="post">
             <h5>Access to:</h5><br>
                 <input type="checkbox" name="lenel" value="lenel">
@@ -72,8 +72,9 @@
                     <label for="filemaker">Filemaker</label><br>
                 <input type="checkbox" name="traka" value="Traka">
                     <label for="traka">traka</label><br>
-                <input type="checkbox" name="collections" value="collections" onchange="javascript:toggleOtherTextboxVisible()" id="OtherCheckBox">
+                <input type="checkbox" name="collections" value="collections"  onclick="dynInput(this);">
                     <label for="collectios">Collection Access</label><br><br>
+                <p id="insertinputs"></p>
             <h5>Access Manager - Requests for Access</h5><br>
                 <input type="checkbox" name="microsoft_office" value="Microsoft Office">
                     <label for="microsoft_office">Microsoft Office</label><br>

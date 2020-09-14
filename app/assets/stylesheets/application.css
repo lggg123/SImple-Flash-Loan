@@ -83,11 +83,34 @@
     color: #17A0B6;
     font-family: -apple-system,
     BlinkMacSystemFont;
+   
  }
 
  #nav-link-2 {
      color: black;
      border-left: white;
+    
  }
 
- 
+ #nav-link-2:active {
+     border-top: 1px solid #F8F8F8;
+     border-bottom: 1px solid #F8F8F8;
+     border-left: 2px solid #17A0B6;
+     color: #17A0B6;
+ }
+
+ #nav-link-2:focus {
+     border-top: 1px solid #F8F8F8;
+     border-bottom: 1px solid #F8F8F8;
+     border-left: 2px solid #17A0B6;
+     color: #17A0B6;
+ }
+
+ #nav-links {
+     position: sticky;
+     Top: 0;
+ }
+
+ #check-box {
+     margin-left: 50px;
+}
