@@ -1,2 +1,0 @@
-class ADRequest < ApplicationRecord 
-end 

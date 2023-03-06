@@ -29,3 +29,13 @@ a {
   }
  
 }
+
+@media (max-width: 640px) {
+  .banner_bottom {
+      height: unset !important;
+  }
+
+  .banner_top {
+      height: unset !important;
+  }
+}
