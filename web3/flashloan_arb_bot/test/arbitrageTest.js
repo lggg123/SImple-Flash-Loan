@@ -1,105 +1,85 @@
-const assert = require("assert");
-const Web3 = require('web3');
-const { request } = require('graphql-request');
+const UniswapContract = require('./uniswapContract');
+const SushiswapContract = require('./sushiswap-contract');
+const KyberswapContract = require('./kyberswap-contract');
+const AaveFlashLoan = require('./aave-flash-loan');
 
-const web3 = new Web3(new Web3.providers.HttpProvider(INFURA_ENDPOINT));
-const NETWORK = 'mainnet';
+describe('Arbitrage bot', () => {
+    const daiAddress = '0x6B175474E89094C44Da98b954EedeAC495271d0F';
+    const usdcAddress = '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48';
+    const usdtAddress = '0xdAC17F958D2ee523a2206206994597C13D831ec7';
+    const uniswapAddress = '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D';
+    const sushiswapAddress = '0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac';
+    const kyberswapAddress = '0x818E6FECD516Ecc3849DAf6845e3EC868087B755';
+    const aaveProviderUrl = 'https://mainnet.infura.io/v3/<your-infura-project-id>';
+    const aavePrivateKey = '<your-private-key';
+    const aaveLendingPoolAddress = '0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9';
+    const aaveProtocolDataProviderAddress = '0x057835Ad21a177dbdd3090bB1CAE03EaCF78Fc6d';
 
-const SUSHISWAP_ENDPOINT = 'https://api.thegraph.com/subgraphs/name/sushiswap/exchange';
-const UNISWAP_ENDPOINT = 'https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2';
-const KYBERSWAP_ENDPOINT = 'https://api.thegraph.com/subgraphs/name/kyber-network/public';
+    let uniswapContract;
+    let sushiswapContract;
+    let kyberswapContract;
+    let aaveFlashLoan;
 
-describe('Flash Loan Arbitage Bot', function() {
-    it('should scan Sushiswap and retrieve market data', async function() {
-        const sushiswapQuery = `
-            query SushiSwapQuery {
-                pairs {where: token0: "0x6b175474e89094c44da98b954eedeac495271d0f", token1: "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"}) {
-                    token0Price
-                    token1Price
-                    reserve0
-                    reserve1
-                    reserveUSD
-                }
-            }
-        `;
-
-        const sushiswapData = await request(SUSHISWAP_ENDPOINT, sushiswapQuery);
-        assert.notEqual(sushiswapData, null);
+    beforeAll(() => {
+        uniswapContract = new UniswapContract(uniswapAddress, daiAddress, usdcAddress, usdtAddress)
+        sushiswapContract = new SushiswapContract(sushiswapAddress, daiAddress, usdcAddress, usdtAddress)
+        kyberswapContract = new KyberswapContract(kyberswapAddress, daiAddress, usdcAddress, usdtAddress)
+        aaveFlashLoan = new AaveFlashLoan(aaveProviderUrl, aavePrivateKey, aaveLendingPoolAddress, aaveProtocolDataProviderAddress)
     });
-    it('should scan Uniswap and retrieve market data', async function() {
-        const uniswapQuery = `
-            query UniSwapQuery {
-                pairs {id: "0x6b175474e89094c44da98b954eedeac495271d0f"} {
-                    token0Price
-                    token1Price
-                    reserve0
-                    reserve1
-                    reserveUSD
-                }
-            }
-        `;
 
-        const uniswapData = await request(UNISWAP_ENDPOINT, uniswapQuery);
-        assert.notEqual(uniswapData, null);
-    });
-    it('should scan KyberSwap and retrieve market data', async function() {
-        const kyberswapQuery = `
-            query KyberSwapQuery {
-                reserves(where: {src: "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2", dst: "0x6b175474e89094c44da98b954eedeac495271d0f"}) {
-                    srcQty
-                    dstQty
-                }
-            }
-        `;
-
-        const kyberswapData =  await request(KYBERSWAP_ENDPOINT, kyberswapQuery);
-        assert.notEqual(kyberswapData, null);
-    });
-    it('should identify an arbitrage opportunity', async function () {
-        // Simulate market conditions where there is a profitable arbitrage opportunity
-        const sushiswapData = { pairs: [{ token0Price: 1, token1Price: 4000  }]};
-        const uniswapData = { pair: { token0Price: 1, token1Price: 3800 } };
-        const kyberswapData = { reserves: [{ srcQty: 100, dstQty: 0.25 }] };
-
-        // Mock the Aave Flash Loan Provider
-        const flashLoanProvider = {
-            provide: async (amount, asset) => {
-                return {
-                    amount: amount,
-                    asset: asset
-                };
-            }
-        };
-
-        // Mock the Uniswap and Sushiswap trading conntracts
+    it ('should identify an arbitrage opportunity between Uniswap, Sushiswap, and Kyberswap', async () => {
+        // Mock the Uniswap contract
         const uniswapContract = {
-            trade: async (inputAsset, outputAsset, amount) => {
-                return amount * uniswapData.pair.token1Price / uniswapData.pair.token0Price;
-            }
-        };
-        const sushiswapContract = {
-            swapExactTokensForTokens: async (amount, inputAsset, outputAsset) => {
-                return amount * sushiswapData.pairs[0].token1Price / sushiswapData.pairs[0].token0Price;
-            }
-        };
-        const kyberswapContract = {
-            getExpectedRate: async (srcToken, dstToken, srcQty) => {
-                return kyberswapData.reserves[0];
+            getAmountsOut: jest.fn(() => [1000, 1, null]),
+            swapExactTokensForTokens: jest.fn(),
+            methods: {
+                swapExactTokensForTokens: jest.fn(),
             },
-            trade: async (srcToken, srcAmount, dstToken, dstAddress, maxDestAmount, minConversionRate, walletId) => {
-                return dstAmount;
-            }
         };
 
-        // Use the arbitrage bot script to find the arbitrage opportunity
-        const arbitrageBot = new ArbitrageBot(flashLoanProvider, uniswapContract, sushiswapContract, kyberswapContract, web3, NETWORK);
-        const opportunity = await arbitrageBot.findArbitrageOpportunity();
+        // Mock the Sushiswap contract
+        const sushiswapContract = {
+            getAmountsOut: jest.fn(() => [1000, 1, null]),
+            swapExactTokensForTokens: jest.fn(),
+            methods: {
+                swapExactTokensForTokens: jest.fn(),
+            },
+        };
 
-        // Verify that the opportunity was found
-        assert.equal(opportunity, true);
+        // Mock the Kyberswap contract
+        const kyberswapContract = {
+            getExpectedRate: jest.fn(() => [1, null]),
+            trade: jest.fn(),
+        };
 
-        // Verify that the arbitrage trade was executed correctly
-        const expectedProfit = 60;
-        assert.equal(arbitrageBot.profit, expectedProfit);
+        // Mock the Aave Flash Loan contract
+        const aaveFlashLoanContract = {
+            executeOperation: jest.fn(),
+        };
+
+        // Initialize the arbitrage bot with the mocked contracts
+        const arbitrageBot = new ArbitrageBot(
+            daiAddress,
+            wethAddress,
+            usdcAddress,
+            usdtAddress,
+            uniswapContract,
+            sushiswapContract,
+            kyberswapContract,
+            aaveFlashLoanContract
+        );
+
+        // Check if the arbitrage bot identifies the right trades to make
+        const expectedTrade = {
+            inputToken: daiAddress,
+            outputToken: usdcAddress,
+            exchange: 'uniswap',
+            inputAmount: 1000,
+            outputAmount: 1000,
+        };
+
+        const actualTrade = await arbitageBot.findProfitableTrade();
+
+        expect(actualTrade).toEqual(expectedTrade);
     });
-})
+});
