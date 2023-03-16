@@ -1,0 +1,19 @@
+{
+  "name": "flash_loan_advanced",
+  "version": "1.0.0",
+  "description": "High Level Flash Loan using Aave",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn hardhat tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lggg123/Flash-Loan-Advanced.git"
+  },
+  "author": "George Alexander Lugo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lggg123/Flash-Loan-Advanced/issues"
+  },
+  "homepage": "https://github.com/lggg123/Flash-Loan-Advanced#readme"
+}
