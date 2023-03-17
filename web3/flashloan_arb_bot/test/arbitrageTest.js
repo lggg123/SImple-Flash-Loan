@@ -1,7 +1,7 @@
 const UniswapContract = require('./uniswapContract');
-const SushiswapContract = require('./sushiswap-contract');
-const KyberswapContract = require('./kyberswap-contract');
-const AaveFlashLoan = require('./aave-flash-loan');
+const SushiswapContract = require('./sushiswapContract');
+const KyberswapContract = require('./kyberswapContract');
+const AaveFlashLoan = require('./aaveFlashLoan');
 
 describe('Arbitrage bot', () => {
     const daiAddress = '0x6B175474E89094C44Da98b954EedeAC495271d0F';
